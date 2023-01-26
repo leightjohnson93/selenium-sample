@@ -2,7 +2,7 @@ name: Swaglabs Scenarios
 run-name: ${{ github.actor }} is testing Swaglabs Demo App 🚀
 on: [push]
 jobs:
-  Run Cucumber Tests:
+  "Run Cucumber Tests":
     runs-on: ubuntu-latest
     steps:
       - name: Set up Chrome
