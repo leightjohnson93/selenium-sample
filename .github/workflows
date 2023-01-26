@@ -1,0 +1,15 @@
+name: Swaglabs Scenarios
+run-name: ${{ github.actor }} is testing Swaglabs Demo App 🚀
+on: [push]
+jobs:
+  Run Cucumber Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Install node modules
+        run: npm install
+      - name: Run Tests
+        run: npm test
