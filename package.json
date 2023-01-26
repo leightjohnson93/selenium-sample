@@ -26,7 +26,6 @@
     "@cucumber/gherkin": "^26.0.3",
     "@types/bunyan": "^1.8.8",
     "@types/chai": "^4.3.4",
-    "@types/cucumber": "^7.0.0",
     "@types/selenium-webdriver": "^4.1.10",
     "chai": "^4.3.7",
     "chromedriver": "^109.0.0",

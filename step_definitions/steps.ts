@@ -9,7 +9,7 @@ BeforeAll(
   () =>
     (driver = new Builder()
       .withCapabilities({
-        chromeOptions: { args: "no-sandbox disable-dev-shm-usage" },
+        chromeOptions: { args: ["--no-sandbox", "--disable-dev-shm-usage"] },
       })
       .forBrowser("chrome")
       .build())
