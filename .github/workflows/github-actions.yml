@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing Swaglabs Demo App 🚀
 on: [push]
 jobs:
   Run-Cucumber-Tests:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Set up Chrome
         uses: browser-actions/setup-chrome@v1
