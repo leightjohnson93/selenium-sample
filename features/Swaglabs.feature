@@ -15,5 +15,7 @@ Feature: Swaglabs
     When I log in as a "locked_out_user"
     Then I should see a "locked out" error
 
-  Scenario: 
-
+  Scenario: Add to cart
+    Given I log in as a "standard_user"
+    When I add an item to my cart
+    Then I have an item in my cart
