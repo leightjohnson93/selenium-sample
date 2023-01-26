@@ -5,7 +5,15 @@ import { assert, expect } from "chai";
 let driver: ThenableWebDriver;
 const password = "secret_sauce";
 
-BeforeAll(() => (driver = new Builder().forBrowser("chrome").build()));
+BeforeAll(
+  () =>
+    (driver = new Builder()
+      .withCapabilities({
+        chromeOptions: { args: "no-sandbox disable-dev-shm-usage" },
+      })
+      .forBrowser("chrome")
+      .build())
+);
 
 Given("I am on the website {string}", async (url: string) => {
   await driver.get(url);
